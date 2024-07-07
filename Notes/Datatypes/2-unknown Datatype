@@ -1,0 +1,24 @@
+unknown Datatype:
+
+unknown is a similar, but safer alternative to any.
+
+unknown is a type introduced in TypeScript to represent values about which we have little or no information.
+
+It is more restrictive than the any type, requiring type-checking before performing most operations with values of the unknown type.
+
+2-Use Cases:
+When the type of a value is not known until runtime.
+When working with values from dynamic sources, such as user inputs or external APIs.
+
+Type: never
+
+never effectively throws an error whenever it is defined.
+let x: never = true; // Error: Type 'boolean' is not assignable to type 'never'.
+
+never is rarely used, especially by itself, its primary use is in advanced generics.
+
+
+Type: undefined & null
+undefined and null are types that refer to the JavaScript primitives undefined and null respectively.
+
+These types don't have much use unless strictNullChecks is enabled in the tsconfig.json file.

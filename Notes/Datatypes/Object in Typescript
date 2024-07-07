@@ -1,0 +1,22 @@
+Objects in Typescript 
+TypeScript has a specific syntax for typing objects.
+
+const car: { type: string, model: string, year: number } = {
+  type: "Toyota",
+  model: "Corolla",
+  year: 2009
+};
+
+
+Type Inference:
+
+TypeScript can infer the types of properties based on their values.
+
+const car = {
+  type: "Toyota",
+};
+car.type = "Ford"; // no error
+car.type = 2; // Error: Type 'number' is not assignable to type 'string'.
+
+
+
